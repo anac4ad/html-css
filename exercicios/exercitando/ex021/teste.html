@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+           background-color: white; 
+           margin: 10px;
+           padding: 10px;
+        }
+
+        nav {
+            background-color: rgb(95, 95, 95);
+            padding: 5px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        section > p#assunto {
+            margin-left: 5px;
+        }
+
+        article {
+            background-color: lightgray;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: gray;
+            margin: 0px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+        }
+
+        footer > p {
+            text-align: center;
+            padding: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p id="assunto">
+                <a href="#">Esportes</a>
+                <a href="#">Política</a>
+                <a href="#">Tecnologia</a>
+            </p>
+        </section>
+        <section>
+            <article>
+                <h2>Notícias sobre tecnologia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur amet, incidunt quo iste perspiciatis nulla nesciunt. Eos odio sequi sunt, quibusdam quas ipsa repellendus fuga ab harum quam minima expedita?</p>
+                <aside>
+                    <p>Artigo escrito por Gustavo Guanabara</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Ana Carolina</p>
+    </footer>
+</body>
+</html>

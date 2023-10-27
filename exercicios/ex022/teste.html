@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de positions</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+        div {
+            background-color: green;
+        }
+
+        div.relative {
+            background: blue;
+            position: relative;
+            height: 100px;
+            width: 100px;
+            top: 50px;
+            left: 50px;
+        }
+
+        div.absolute {
+            background: red;
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="absolute">
+            testando position
+        </div>
+    </div>
+</body>
+</html>

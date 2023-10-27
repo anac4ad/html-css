@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /*
+                width: 800px; Utilize width caso veja que o navegador ficou em um tamanho bom, neste caso está com 800px 
+                
+                margin: auto; /* Caso a largura (width) ultrapasse os 800px, utilizando o margin auto irá centralizar o conteudo
+                    IMPORTANTE - mas se for menor que 800px terá de usar MAX-WIDTH E MIN-WIDTH para criar a responsividade
+            */
+        
+        min-width: 250px; /* Estamos usando 320px pois esta é a largura máxima de um dispositivo mais antigo (na vertical)*/
+        max-width: 800px;
+        margin: auto;
+
+        }
+
+        img {
+            width: 100%; /* Utilizar quando quiser que a imagem ocupe 100% da tela. Evitando assim a quebra da imagem. */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam, aspernatur amet dicta doloribus eaque, aliquid ad doloremque, ex corrupti laboriosam dolorum? Ipsam voluptatem dicta et dolor delectus quo quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit alias cumque dolorum doloribus praesentium quam recusandae quod corporis ab corrupti placeat ducimus, facere omnis vitae eum architecto doloremque voluptatem! Corrupti! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus nostrum velit eligendi quo itaque ipsum blanditiis voluptate iusto facere, aut optio quae, autem et nobis nemo repellat tempora provident maxime.</p>
+
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <!-- Caso a página for menor 600px então irá carregar outra imagem - USAR QUANDO QUISER CARREGAR UMA OUTRA IMAGEM MENOR -->
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam, aspernatur amet dicta doloribus eaque, aliquid ad doloremque, ex corrupti laboriosam dolorum? Ipsam voluptatem dicta et dolor delectus quo quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit alias cumque dolorum doloribus praesentium quam recusandae quod corporis ab corrupti placeat ducimus, facere omnis vitae eum architecto doloremque voluptatem! Corrupti! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus nostrum velit eligendi quo itaque ipsum blanditiis voluptate iusto facere, aut optio quae, autem et nobis nemo repellat tempora provident maxime.</p>
+    </main>
+</body>
+</html>

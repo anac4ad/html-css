@@ -1,0 +1,1 @@
+A tag <big> (que deixava o texto maior) se tornou obsoleta pois é possível fazer esta alteração pelo CSS, mas a tag <small> ainda é utilizada pois adiciona sentido a frase.
